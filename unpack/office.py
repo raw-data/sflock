@@ -20,7 +20,7 @@ class OfficeFile(Unpacker):
 
     def unpack(self, password=None, duplicates=None):
         # Avoiding recursive imports. TODO Can this be generalized?
-        from sflock import ident
+        from .. import ident
 
         entries = []
 
