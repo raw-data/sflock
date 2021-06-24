@@ -2,8 +2,8 @@
 # This file is part of SFlock - http://www.sflock.org/.
 # See the file 'docs/LICENSE.txt' for copying permission.
 
-from sflock.abstracts import Unpacker
-from sflock.decode import plugins
+from ..abstracts import Unpacker
+from ..decode import plugins
 
 class OfficeFile(Unpacker):
     name = "office"

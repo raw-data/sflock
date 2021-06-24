@@ -7,7 +7,7 @@ import os
 import sys
 # import peepdf
 
-from sflock.abstracts import Unpacker, File
+from ..abstracts import Unpacker, File
 
 class PdfFile(Unpacker):
     name = "pdffile"

@@ -6,7 +6,7 @@ import io
 import ntpath
 import six.moves
 
-from sflock.abstracts import Unpacker, File
+from ..abstracts import Unpacker, File
 
 class BupFile(Unpacker):
     name = "bupfile"

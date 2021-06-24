@@ -6,8 +6,8 @@ import os
 import subprocess
 import tempfile
 
-from sflock.abstracts import Unpacker
-from sflock.misc import data_file
+from ..abstracts import Unpacker
+from ..misc import data_file
 
 class DaaFile(Unpacker):
     name = "daafile"

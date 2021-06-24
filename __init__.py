@@ -2,7 +2,7 @@
 # This file is part of SFlock - http://www.sflock.org/.
 # See the file 'docs/LICENSE.txt' for copying permission.
 
-from sflock.compat import magic
-from sflock.exception import UnpackException
-from sflock.main import ident, unpack, supported, zipify
-from sflock.__version__ import __version__
+from .compat import magic
+from .exception import UnpackException
+from .main import ident, unpack, supported, zipify
+from .__version__ import __version__

@@ -9,8 +9,8 @@ from __future__ import print_function
 import os
 import tempfile
 
-from sflock.abstracts import Unpacker
-from sflock.exception import UnpackException
+from ..abstracts import Unpacker
+from ..exception import UnpackException
 
 
 class ZipFile(Unpacker):

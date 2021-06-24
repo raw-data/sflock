@@ -6,8 +6,8 @@ import os.path
 import struct
 import zlib
 
-from sflock.abstracts import Unpacker, File
-from sflock.exception import UnpackException
+from ..abstracts import Unpacker, File
+from ..exception import UnpackException
 
 class MsoFile(Unpacker):
     name = "msofile"

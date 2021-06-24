@@ -7,7 +7,7 @@ import email.header
 import re
 import six
 
-from sflock.abstracts import Unpacker, File
+from ..abstracts import Unpacker, File
 
 class EmlFile(Unpacker):
     name = "emlfile"

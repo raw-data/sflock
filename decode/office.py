@@ -12,7 +12,7 @@ import xml.dom.minidom
 from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 
-from sflock.abstracts import Decoder, File
+from ..abstracts import Decoder, File
 
 class EncryptedInfo(object):
     key_data_salt = None

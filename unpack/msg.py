@@ -4,7 +4,7 @@
 
 import six
 
-from sflock.abstracts import Unpacker, File
+from ..abstracts import Unpacker, File
 
 class MsgFile(Unpacker):
     name = "msgfile"

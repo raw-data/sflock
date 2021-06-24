@@ -7,7 +7,7 @@ import os
 import subprocess
 import tempfile
 
-from sflock.abstracts import Unpacker
+from ..abstracts import Unpacker
 
 class RarFile(Unpacker):
     name = "rarfile"

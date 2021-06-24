@@ -11,8 +11,8 @@ import six
 import tarfile
 import tempfile
 
-from sflock.abstracts import Unpacker, File
-from sflock.config import MAX_TOTAL_SIZE
+from ..abstracts import Unpacker, File
+from ..config import MAX_TOTAL_SIZE
 
 
 class TarFile(Unpacker):

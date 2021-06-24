@@ -9,9 +9,7 @@ import logging
 import os
 import sys
 
-import sflock
-
-from sflock.misc import data_file
+from .. import misc
 
 log = logging.getLogger(__name__)
 
@@ -19,14 +17,14 @@ log = logging.getLogger(__name__)
 if sys.platform == "win32":
     if sys.maxsize != 0x7fffffff:
         os.environ["PATH"] = "%s;%s" % (
-            data_file("win64"), os.environ["PATH"]
+            misc.data_file("win64"), os.environ["PATH"]
         )
         magic_file = data_file("win64", "magic.mgc")
     else:
         os.environ["PATH"] = "%s;%s" % (
-            data_file("win32"), os.environ["PATH"]
+            misc.data_file("win32"), os.environ["PATH"]
         )
-        magic_file = data_file("win32", "magic.mgc")
+        magic_file = misc.data_file("win32", "magic.mgc")
 
 # Therefore only import libmagic at this point.
 import magic

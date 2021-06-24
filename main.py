@@ -14,11 +14,11 @@ import re
 import six
 import zipfile
 
-from sflock.abstracts import File, Unpacker
-from sflock.exception import IncorrectUsageException
-from sflock.ident import identify
-from sflock.misc import make_list
-from sflock.unpack import plugins
+from .abstracts import File, Unpacker
+from .exception import IncorrectUsageException
+from .ident import identify
+from .misc import make_list
+from .unpack import plugins
 
 def supported():
     """Returns the supported extensions for this machine. Support for the

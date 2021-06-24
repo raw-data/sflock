@@ -5,7 +5,7 @@
 import re
 from collections import OrderedDict
 
-from sflock.aux.decode_vbe_jse import DecodeVBEJSE
+from .aux.decode_vbe_jse import DecodeVBEJSE
 
 mimes = OrderedDict([
     ("application/x-lzh-compressed", "lzh"),
